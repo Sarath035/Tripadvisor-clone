@@ -275,13 +275,42 @@
     border-radius: 15px;
 }
 @media screen and (max-width: 1024px) {
-    .section__s1-img1,.section__s2-img1,.section__s3-img1{
+    .section__s1-img1,.section__s2-img1,.section__s3-img1,.explore-img,.vacation_img1{
         width: 31% !important;
+    }
+    .img{
+        margin-left:10px  !important;
     }
 }
 @media screen and (max-width: 767px) {
-    .section__s1-img1 ,.section__s2-img1,.section__s3-img1{
+    .section__s1-img1 ,.section__s2-img1,.section__s3-img1,.explore-img,.vacation_img1{
         width: 47% !important;
+    }
+    .explore__s3-search{
+        display:flex;
+    }
+    .explore__s3-search input{
+        margin-left:10px;
+    }
+    .img{
+        margin-left: 0 !important;
+        padding:20px !important;
+    }
+    .footer_img >div{
+        width:100% !important
+    }
+    .footer select{
+        min-width: 50% !important;
+    }
+    .footer1{
+        margin: 0 !important;
+        justify-content: start !important;
+    }
+    .vacation_img1 h1{
+        font-size: 18px !important;
+    }
+    .trending1{
+        margin-right: 0 !important;
     }
     .explore__s2{
         width: 100%;
@@ -386,7 +415,7 @@
 
 .explore2{
     background-color: antiquewhite;
-    height: 500px;
+    /* height: 500px; */
 }
 .explore-title{
     font-size: 24px;
@@ -399,22 +428,25 @@
 
 .explore-container{
     display: flex;
-    /* width: 10%; */
-    gap: 20px;
+    width:100%; 
     justify-content: center;
     margin-top: 30px;
+    padding-left: 20px;
+
+
 }
 
 .explore-img h1{
     font-size: 18px;
     padding: 10px;
-    justify-content: center;
+ 
 }
 
 .explore-img img{
    
-    width: 400px;
-    height: 250px;
+    width: 70%;
+    /* height: 250px; */
+    gap: 10px;
     border-radius: 15px;
 }
 
@@ -430,10 +462,10 @@
 }
 .vacation_img{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     margin-top: 30px;
-    
+    flex-wrap: wrap;
 }
 .vacation_img1{
     width: 23%;
@@ -457,13 +489,13 @@
 .img__title{
     font-size: 50px;
     margin-left: 60px;
-    width: 500px;
+    max-width: 500px;
 }
 
 .image2 p{
     font-size: 24px;
     margin-left: 60px;
-    width: 500px;
+    max-width: 500px;
     line-height: 29px;
     margin-top: 30px;
 }
@@ -489,11 +521,12 @@
 
 
 .image2{
+    width: 80%;
     background-image: url(https://static.tacdn.com/img2/brand/feed/tc_cards_2024_c04.png) ;
     background-repeat: no-repeat;
     /* background-attachment: fixed;   */
     background-size: contain;
-    height: 500px;
+    /* height: 500px; */
     background-position: right center;
 }
 
@@ -543,7 +576,7 @@
     display: flex;
     font-size: 14px;
     justify-content:flex-start;
-    
+    flex-wrap: wrap;
 }
 
 .trending1{
@@ -574,7 +607,7 @@
     margin: 30px;
     margin-left: 30px;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
 }
 
 
@@ -588,6 +621,7 @@
 .footer_img{
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
 }
 .footer_last1{
     margin: 20px;
